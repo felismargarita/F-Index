@@ -12,8 +12,8 @@ export default function IndexPage() {
       <IndexCard img={blogImg} title="Blog"/>
       <IndexCard img={music} title="Music Player"/>
       <IndexCard img={antd} title="Antd More"/>
-      <IndexCard img={star} title="Imitation Collections"/>
-      <IndexCard img={githubImg} title="Github" link="https://github.com/felismargarita"/>
+      <IndexCard img={star} title="Imitation Collections"  type="route" link="/collections"/>
+      <IndexCard img={githubImg} title="Github" type="site" link="https://github.com/felismargarita"/>
     </div>
   );
 }

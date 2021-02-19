@@ -4,7 +4,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  title:'我的空间',
+  title:'My Zoon',
   sass:{
     implementation: require('node-sass'),
   },
@@ -18,7 +18,8 @@ export default defineConfig({
   },
   favicon:'/favicon.ico',
   routes: [
-    { path: '/', component: '@/pages/index' },
+    { path: '/', component: '@/pages/index',exact:true },
+    { path: '/collections', component: '@/pages/Collections' },
   ],
   fastRefresh: {},
 });
