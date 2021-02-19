@@ -4,7 +4,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  title:'My Zoon',
+  title:'My Zone',
   sass:{
     implementation: require('node-sass'),
   },
