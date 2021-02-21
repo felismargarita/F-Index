@@ -4,6 +4,8 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  base:'/index/',
+  publicPath:'/index/',
   title:'My Zone',
   sass:{
     implementation: require('node-sass'),
@@ -16,7 +18,7 @@ export default defineConfig({
   targets:{
     ie:10
   },
-  favicon:'/favicon.ico',
+  favicon:'/index/favicon.ico',
   routes: [
     { path: '/', component: '@/pages/index',exact:true },
     { path: '/collections', component: '@/pages/Collections' },
