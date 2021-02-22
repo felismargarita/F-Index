@@ -16,7 +16,7 @@ const IndexCard:React.FC<IndexCardProps> =({img,title,link,type})=>{
       return
     }
     if(type === 'site'){
-      window.open(link)
+      window.location.href=link
     }
     if(type === 'route'){
       history.push(link)
