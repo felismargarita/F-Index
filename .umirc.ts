@@ -4,8 +4,6 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  base:'/index/',
-  publicPath:'/index/',
   title:'My Zone',
   sass:{
     implementation: require('node-sass'),
